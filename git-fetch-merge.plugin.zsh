@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 git-fetch-merge() {
   local remote=$(git remote | grep upstream || echo "origin")
   local branch="$1"
