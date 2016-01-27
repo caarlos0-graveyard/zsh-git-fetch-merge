@@ -1,5 +1,7 @@
 #!/bin/sh
+# shellcheck disable=SC2039
 git-fetch-merge() {
+  # shellcheck disable=SC2039
   local remote branch
   remote=$(git remote | grep upstream || echo "origin")
   branch="$1"
