@@ -2,7 +2,7 @@
 
 If you work a lot with forks, you probably every once in a while have to:
 
-```sh
+```console
 $ git fetch upstream
 $ git merge upstream/master
 ```
@@ -15,31 +15,31 @@ I don't like to repeat myself, so, I created this small plugin.
 
 ### antibody
 
-```sh
+```console
 $ antibody bundle caarlos0/zsh-git-fetch-merge
 ```
 
 ### antigen
 
-```sh
+```console
 $ antigen bundle caarlos0/zsh-git-fetch-merge
 ```
 
 ## Usage
 
-```sh
+```console
 $ git-fetch-merge <branch - defaults to master>
 ```
 
 Or, go ahead and alias it:
 
-```sh
-$ git config --global alias.fm '!zsh -ic git-fetch-merge'
+```console
+$ git config --global alias.fm '!zsh -ic \"git-fetch-merge $*\"'
 ```
 
 Then
 
-```sh
+```console
 $ git fm
 ```
 
