@@ -16,25 +16,19 @@ I don't like to repeat myself, so, I created this small plugin.
 ### antibody
 
 ```console
-$ antibody bundle caarlos0/zsh-git-fetch-merge
-```
-
-### antigen
-
-```console
-$ antigen bundle caarlos0/zsh-git-fetch-merge
+$ antibody bundle caarlos0/zsh-git-fetch-merge kind:path
 ```
 
 ## Usage
 
 ```console
-$ git-fetch-merge <branch - defaults to master>
+$ git fetch-merge <branch - defaults to master>
 ```
 
 Or, go ahead and alias it:
 
 ```console
-$ git config --global alias.fm '!zsh -ic \"git-fetch-merge $*\"'
+$ git config --global alias.fm fetch-merge
 ```
 
 Then
